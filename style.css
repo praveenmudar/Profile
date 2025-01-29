@@ -1,0 +1,126 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: #ffbb00;
+}
+
+/* Intro Section */
+.intro {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+/* About Section */
+.about {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+}
+
+/* Resume Section */
+.resume h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.resume h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.resume ul {
+    list-style-type: none;
+}
+
+.resume ul li {
+    font-size: 1.1em;
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.projects h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project-card h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.1em;
+}
