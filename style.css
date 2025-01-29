@@ -8,7 +8,7 @@
 /* Body and Background */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Warm gradient background */
     color: white;
     padding: 0;
     margin: 0;
