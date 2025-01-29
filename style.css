@@ -1,0 +1,249 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Warm gradient background */
+    color: white;
+    padding: 0;
+    margin: 0;
+    animation: backgroundAnimation 15s infinite alternate;
+}
+
+/* Background animation effect */
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    }
+    100% {
+        background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    }
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+header nav a i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffbb00;
+    transform: scale(1.1);
+}
+
+header nav a:hover i {
+    transform: rotate(360deg);
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffbb00;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+header nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Intro Section */
+.intro {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 3s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: moveUp 1.5s ease-out;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+/* About, Education, Experience Sections */
+.about, .education, .experience, .skills, .contact {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    animation: slideInFromLeft 2s ease-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p, section ul {
+    font-size: 1.2em;
+}
+
+/* Education Dropdown */
+#education .dropdown-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#education .dropdown-content.show {
+    display: block;
+}
+
+#education-link {
+    cursor: pointer;
+}
+
+/* Professional Experience Section */
+.experience {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    animation: slideInFromLeft 2s ease-out;
+}
+
+.experience h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.company {
+    margin-bottom: 30px;
+}
+
+.company-name {
+    font-size: 2em;
+    color: #ffbb00;
+    margin-bottom: 10px;
+}
+
+.sub-menu {
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+.sub-menu li {
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.sub-menu li:hover {
+    color: #ffbb00;
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    animation: slideInFromBottom 2s ease-out;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    .intro h1 {
+        font-size: 2.5em;
+    }
+    .about h2, .education h2, .experience h2, .skills h2, .contact h2 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+    .intro h1 {
+        font-size: 2em;
+    }
+    .intro p {
+        font-size: 0.9em;
+    }
+    section h2 {
+        font-size: 1.8em;
+    }
+    section p, section ul {
+        font-size: 0.9em;
+    }
+    footer {
+        font-size: 0.8em;
+    }
+}

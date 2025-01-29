@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen V - Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about"><i class="fas fa-user"></i>About Me</a>
+            <a href="#education" id="education-link"><i class="fas fa-graduation-cap"></i>Education</a>
+            <a href="#experience"><i class="fas fa-briefcase"></i>Experience</a>
+            <a href="#skills"><i class="fas fa-cogs"></i>Skills</a>
+            <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>Praveen V</h1>
+        <p>Welcome to my personal profile website! Here you'll find information about my career, skills, education, and professional experience.</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Career Objective</h2>
+        <p>To enhance my Educational and Professional skills in a stable and dynamic workplace and my goal is to become associated with a company where I can utilize my skills and gain further experience while enhancing the company’s productivity and reputation.</p>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="dropdown-content" id="education-dropdown">
+            <p><strong>Diploma in Electronics and Communication Engineering</strong><br>
+            SDM Polytechnic, Ujire<br>
+            Mode: Full-time (2017 – 2020)</p>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Professional Experience</h2>
+        <div class="company">
+            <h3 class="company-name">Bosch Automotive Electronics India Pvt Ltd.</h3>
+            <p>1 Year (2020 to 2021)</p>
+            <ul class="sub-menu">
+                <li>Performed manual testing on various software features in TMS.</li>
+                <li>Developed and maintained test plans, test cases, and reports.</li>
+                <li>Implemented and tested station track layout design, signaling Indication, and Train Tracking Logic.</li>
+                <li>Conducted System testing for TMS and attended Site Acceptance testing with customers.</li>
+                <li>Experience with Wago Controller Configuration, data verification, and AWS Cloud testing.</li>
+                <li>Simulated automatic train movements for TMS testing.</li>
+            </ul>
+        </div>
+
+        <div class="company">
+            <h3 class="company-name">TVM Signaling and Transportation Systems Pvt Ltd.</h3>
+            <p>3.2 Years (2021 to Present)</p>
+            <ul class="sub-menu">
+                <li>Developed and tested software systems for railway signaling and transportation.</li>
+                <li>Worked on the design and implementation of Train Management Systems.</li>
+                <li>Conducted testing of signaling systems, track layouts, and signaling logic.</li>
+                <li>Performed system testing for TMS and participated in customer Site Acceptance testing.</li>
+                <li>Gained experience with Wago Controller Configuration, data verification, and AWS Cloud testing.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Career Skills</h2>
+        <ul>
+            <li>Basics of C, C++, PLC (Wago Controller)</li>
+            <li>Familiar with tools like Ot, Visual Studio, Parasoft, Eclipse</li>
+            <li>Management tools like DocuMan, Jira, SVN</li>
+            <li>Excel-VBA Programming</li>
+            <li>SQL Developer</li>
+            <li>Basics of Visio and AutoCAD</li>
+            <li>Excellent problem-solving and analytical skills</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Information</h2>
+        <p>Email: v.praveenmudar@gmail.com</p>
+        <p>Phone: 7760797500</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Praveen V | All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle dropdown for Education section
+        document.getElementById('education-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var dropdown = document.getElementById('education-dropdown');
+            dropdown.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
