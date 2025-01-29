@@ -124,3 +124,106 @@ footer {
 .project-card p {
     font-size: 1.1em;
 }
+
+/* Mobile-specific Styles (Responsive) */
+@media screen and (max-width: 768px) {
+    header nav a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    .resume h1 {
+        font-size: 2em;
+    }
+
+    .resume h2 {
+        font-size: 1.8em;
+    }
+
+    .resume ul li {
+        font-size: 1em;
+    }
+
+    .projects h1 {
+        font-size: 2em;
+    }
+
+    .project-card h2 {
+        font-size: 1.8em;
+    }
+
+    .project-card p {
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 0.9em;
+    }
+
+    .about h2 {
+        font-size: 1.8em;
+    }
+
+    .about p {
+        font-size: 0.9em;
+    }
+
+    .resume h1 {
+        font-size: 1.8em;
+    }
+
+    .resume h2 {
+        font-size: 1.6em;
+    }
+
+    .resume ul li {
+        font-size: 0.9em;
+    }
+
+    .projects h1 {
+        font-size: 1.8em;
+    }
+
+    .project-card h2 {
+        font-size: 1.6em;
+    }
+
+    .project-card p {
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
